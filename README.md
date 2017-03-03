@@ -25,9 +25,12 @@ KEBC.py  - python implementation of KEBC
 |KEBC_marg | KEBC using marginal distributions|
 
 test_KEBC.py  - a toy synthetic test
-     * gen_stat            compute the precision and recall of clustering results
-     * Generate_XY         generate synthetic data
-     * exp_synth           conduct synthetic experiment
+
+| Function  | Description  |
+|---|---|
+|gen_stat | compute the precision and recall of clustering results|
+|Generate_XY  |  generate synthetic data|
+|exp_synth | conduct synthetic experiment|
 
 -------------------------------------------------------------------------------
 ---------------------------------- 2. Usage -----------------------------------
