@@ -1,7 +1,10 @@
 """
 KEBC (Kernel embedding-based clustering) python implementation
 (Anaconda 4.3.0 64-bit for Windows)
- 
+
+Shoubo (shoubo.hu AT gmail.com)
+06/02/2017
+
 USAGE:
   label = KEBC_cond(XY, label_true, score_flg)
   label = KEBC_cond_ref(XY, label_true, score_flg)
