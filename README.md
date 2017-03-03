@@ -1,5 +1,4 @@
-# KEBC
-Kernel embedding-based clustering
+# KEBC (Kernel embedding-based clustering)
 
 Python Code for the KEBC algorithm
 
@@ -36,7 +35,7 @@ The code is written in Python (Anaconda 4.3.0 64-bit for Windows).
 ---------------------------------- 2. Usage -----------------------------------
 -------------------------------------------------------------------------------
 
-**KEBC**
+### KEBC
 
 ~~~~
 label = KEBC\_cond(XY, label_true, score_flg)
@@ -59,7 +58,7 @@ Output:
 |label   |    list of cluster label for each group|
 
 
-**synthetic experiment**
+### Synthetic experiment
 
 ~~~~
 exp_synth(n_clu, n_grp)
