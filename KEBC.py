@@ -1,19 +1,30 @@
+"""
+KEBC (Kernel embedding-based clustering) python implementation
+(Anaconda 4.3.0 64-bit for Windows)
+ 
+USAGE:
+  label = KEBC_cond(XY, label_true, score_flg)
+  label = KEBC_cond_ref(XY, label_true, score_flg)
+  label = KEBC_marg(XY, label_true, score_flg)
+ 
+INPUT:
+  XY         - input data, list of numpy arrays. rows of each array are 
+               i.i.d. samples, column of each array represent variables
+  label_true - the ground truth of cluster label of each group
+  score_flg  - output score file or not. 1 - yes, 0 - no
+ 
+OUTPUT: 
+  label      - list of cluster label for each group
+ 
+"""
 from __future__ import division
 import numpy as np
 from scipy.linalg import inv, eig
 from scipy.sparse.linalg import eigs
-from pylab import *
-# from scipy.cluster.vq import kmeans2
 from scipy.optimize import linear_sum_assignment
 from scipy.stats import gamma
 from random import choice
-
 from sklearn.cluster import KMeans
-# import matplotlib.pyplot as plt
-# from mpl_toolkits.mplot3d import Axes3D
-import cPickle as pickle
-
-import csv
 
 
 class KEMDOPERATION:
@@ -707,33 +718,3 @@ def membership(label, number_cluster):
 		print "\n"
 		clu_dict[i] = MB
 	return clu_dict
-
-
-if __name__ == '__main__':
-	Max = 1
-	count = 0
-	nclu = 2
-	Ngrp = 100
-
-	re_all = np.zeros((1,2 * nclu), dtype = float)
-	re_sum = np.zeros((1,2 * nclu), dtype = float)
-	for i in range(0,Max):
-		# re = exp5(2, 20)
-		re = exp_synth(nclu, Ngrp)
-		print re
-		if (re == 0).all():
-			pass
-		else:
-			re_sum = re_sum + re
-			re_all = np.vstack((re_all, re))
-			count += 1
-			print 'i = %d' %i
-	re_sum = re_sum / count
-	print 'mean vector'
-	print re_sum
-	print '\n'
-	re_all = np.delete(re_all, (0), axis = 0)
-	print 'std vector'
-	print np.std(re_all, axis = 0)
-	print '\n'
-	print 'count = %d' %count
