@@ -17,9 +17,9 @@ Content:
 The code is written in Python (Anaconda 4.3.0 64-bit for Windows).
 
    1. <KEBC class="py"></KEBC>  - python implementation of KEBC
-     * KEBC_cond           KEBC using conditional distributions
-     * KEBC_cond_ref       KEBC using conditional distributions with reference distribution
-     * KEBC_marg           KEBC using marginal distributions
+     * KEBC_cond           & KEBC using conditional distributions
+     * KEBC_cond_ref       & KEBC using conditional distributions with reference distribution
+     * KEBC_marg           & KEBC using marginal distributions
 
    2. <test_KEBC class="py"></test_KEBC>  - a toy synthetic test
      * gen_stat            compute the precision and recall of clustering results
@@ -32,6 +32,7 @@ The code is written in Python (Anaconda 4.3.0 64-bit for Windows).
 
 For KEBC
 label = KEBC\_cond(XY, label_true, score_flg)
+
 Inputs:
   * XY          input data, list of numpy arrays. rows of each array are i.i.d.
               samples, column of each array represent variables
@@ -43,6 +44,7 @@ Output:
 
 For synthetic experiment
 exp_synth(n_clu, n_grp)
+
 Inputs:
   * n_clu       number of clusters
   * n_grp       number of groups
