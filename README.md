@@ -38,9 +38,11 @@ The code is written in Python (Anaconda 4.3.0 64-bit for Windows).
 
 **KEBC**
 
+~~~~
 * label = KEBC\_cond(XY, label_true, score_flg)
 * label = KEBC\_cond_ref(XY, label_true, score_flg)
 * label = KEBC\_marg(XY, label_true, score_flg)
+~~~~
 
 Inputs:
 
@@ -59,7 +61,7 @@ Output:
 
 **synthetic experiment**
 
-exp_synth(n_clu, n_grp)
+'exp_synth(n_clu, n_grp)'
 
 Inputs:
 
