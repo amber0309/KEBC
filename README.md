@@ -16,15 +16,15 @@ Content:
 
 The code is written in Python (Anaconda 4.3.0 64-bit for Windows).
 
-   a) <KEBC class="py"></KEBC>  - python implementation of KEBC
-   KEBC_cond           KEBC using conditional distributions
-   KEBC_cond_ref       KEBC using conditional distributions with reference distribution
-   KEBC_marg           KEBC using marginal distributions
+   *a) <KEBC class="py"></KEBC>  - python implementation of KEBC
+   *KEBC_cond           KEBC using conditional distributions
+   *KEBC_cond_ref       KEBC using conditional distributions with reference distribution
+   *KEBC_marg           KEBC using marginal distributions
 
-   b) <test_KEBC class="py"></test_KEBC>  - a toy synthetic test
-   gen_stat            compute the precision and recall of clustering results
-   Generate_XY         generate synthetic data
-   exp_synth           conduct synthetic experiment
+   *b) <test_KEBC class="py"></test_KEBC>  - a toy synthetic test
+   *gen_stat            compute the precision and recall of clustering results
+   *Generate_XY         generate synthetic data
+   *exp_synth           conduct synthetic experiment
 
 -------------------------------------------------------------------------------
 ---------------------------------- 2. Usage -----------------------------------
