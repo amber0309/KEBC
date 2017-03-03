@@ -16,7 +16,7 @@ Content:
 
 The code is written in Python (Anaconda 4.3.0 64-bit for Windows).
 
-**KEBC.py  - python implementation of KEBC**
+**KEBC.py**  - python implementation of KEBC
 
 | Function  | Description  |
 |---|---|
@@ -24,7 +24,7 @@ The code is written in Python (Anaconda 4.3.0 64-bit for Windows).
 |KEBC_cond_ref |  KEBC using conditional distributions with reference distribution|
 |KEBC_marg | KEBC using marginal distributions|
 
-**test_KEBC.py  - a toy synthetic test**
+**test_KEBC.py**  - a toy synthetic test
 
 | Function  | Description  |
 |---|---|
@@ -41,6 +41,7 @@ The code is written in Python (Anaconda 4.3.0 64-bit for Windows).
 label = KEBC\_cond(XY, label_true, score_flg)
 
 Inputs:
+
 | Argument  | Description  |
 |---|---|
 |XY | input data, list of numpy arrays. rows of each array are i.i.d. samples, column of each array represent variables|
@@ -48,6 +49,7 @@ Inputs:
 |score_flg | output score file or not. 1 - yes, 0 - no|
 
 Output:
+
 | Argument  | Description  |
 |---|---|
 |label   |    list of cluster label for each group|
@@ -58,6 +60,7 @@ Output:
 exp_synth(n_clu, n_grp)
 
 Inputs:
+
 | Argument  | Description  |
 |---|---|
 |n_clu |    number of clusters|
