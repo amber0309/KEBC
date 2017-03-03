@@ -1,3 +1,19 @@
+"""
+A toy synthetic test for KEBC
+(Anaconda 4.3.0 64-bit for Windows)
+
+Shoubo (shoubo.hu AT gmail.com)
+06/02/2017
+
+USAGE:
+  exp_synth(n_clu, n_grp)
+
+ 
+INPUT:
+  n_clu      - number of clusters
+  n_grp      - number of groups
+  
+"""
 from __future__ import division
 import numpy as np
 from scipy.linalg import inv, eig
