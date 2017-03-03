@@ -17,6 +17,9 @@ Content:
 The code is written in Python (Anaconda 4.3.0 64-bit for Windows).
 
    * <KEBC class="py"></KEBC>  - python implementation of KEBC
+   KEBC_cond | KEBC using conditional distributions
+   KEBC_cond_ref |  KEBC using conditional distributions with reference distribution
+   KEBC_marg | KEBC using marginal distributions
      * KEBC_cond           & KEBC using conditional distributions
      * KEBC_cond_ref       & KEBC using conditional distributions with reference distribution
      * KEBC_marg           & KEBC using marginal distributions
