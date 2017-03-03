@@ -58,7 +58,7 @@ Output:
 |label   |    list of cluster label for each group|
 
 
-### Synthetic experiment (test.KEBC.py)
+### Synthetic experiment (test_KEBC.py)
 
 ~~~~
 exp_synth(n_clu, n_grp)
