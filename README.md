@@ -35,7 +35,7 @@ The code is written in Python (Anaconda 4.3.0 64-bit for Windows).
 ---------------------------------- 2. Usage -----------------------------------
 -------------------------------------------------------------------------------
 
-### KEBC
+### KEBC (KEBC.py)
 
 ~~~~
 label = KEBC\_cond(XY, label_true, score_flg)
@@ -58,7 +58,7 @@ Output:
 |label   |    list of cluster label for each group|
 
 
-### Synthetic experiment
+### Synthetic experiment (test.KEBC.py)
 
 ~~~~
 exp_synth(n_clu, n_grp)
