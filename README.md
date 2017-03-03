@@ -18,11 +18,11 @@ The code is written in Python (Anaconda 4.3.0 64-bit for Windows).
 
 KEBC.py  - python implementation of KEBC
    
-   |name | age|
-   |---- | ---|
-   |KEBC_cond | KEBC using conditional distributions|
-   |KEBC_cond_ref |  KEBC using conditional distributions with reference distribution|
-   |KEBC_marg | KEBC using marginal distributions|
+| Function  | Description  |
+|---|---|
+|KEBC_cond | KEBC using conditional distributions|
+|KEBC_cond_ref |  KEBC using conditional distributions with reference distribution|
+|KEBC_marg | KEBC using marginal distributions|
 
 test_KEBC.py  - a toy synthetic test
      * gen_stat            compute the precision and recall of clustering results
