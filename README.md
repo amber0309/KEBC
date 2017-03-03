@@ -18,7 +18,6 @@ The code is written in Python (Anaconda 4.3.0 64-bit for Windows).
 
 KEBC.py  - python implementation of KEBC
 
-
 | Function  | Description  |
 |---|---|
 |KEBC_cond | KEBC using conditional distributions|
