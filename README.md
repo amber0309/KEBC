@@ -38,9 +38,9 @@ The code is written in Python (Anaconda 4.3.0 64-bit for Windows).
 ### KEBC (KEBC.py)
 
 ~~~~
-label = KEBC\_cond(XY, label_true, score_flg)
-label = KEBC\_cond_ref(XY, label_true, score_flg)
-label = KEBC\_marg(XY, label_true, score_flg)
+label = KEBC_cond(XY, label_true, score_flg)
+label = KEBC_cond_ref(XY, label_true, score_flg)
+label = KEBC_marg(XY, label_true, score_flg)
 ~~~~
 
 Inputs:
