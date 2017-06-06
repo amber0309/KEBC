@@ -13,15 +13,22 @@ Content:
 ----------------------------------- 1. Code -----------------------------------
 -------------------------------------------------------------------------------
 
-The code is written in Python (Anaconda 4.3.0 64-bit for Windows).
+The code is written in Python (Anaconda 4.3.0 64-bit for python 2.7 for Windows).
 
-**KEBC.py**  - python implementation of KEBC
+**KEBC.py**  - Implementation of KEBC using kernel trick
 
 | Function  | Description  |
 |---|---|
 |KEBC_cond | KEBC using conditional distributions|
 |KEBC_cond_ref |  KEBC using conditional distributions with reference distribution|
 |KEBC_marg | KEBC using marginal distributions|
+
+**KEBC_bochner.py**  - Implementation of KEBC using explicit kernel mapping (Bochner's theorem)
+
+| Function  | Description  |
+|---|---|
+|KEBC_cond_bochner | KEBC using conditional distributions|
+|KEBC_marg_bochner | KEBC using marginal distributions|
 
 **test_KEBC.py**  - a toy synthetic test
 
@@ -57,6 +64,27 @@ Output:
 |---|---|
 |label   |    list of cluster label for each group|
 
+### KEBC_bochner (KEBC_bochner.py)
+
+~~~~
+label = KEBC_cond_bochner(XY, label_true, k, score_flg)
+label = KEBC_marg_bochner(XY, label_true, k, score_flg)
+~~~~
+
+Inputs:
+
+| Argument  | Description  |
+|---|---|
+|XY | input data, list of numpy arrays. rows of each array are i.i.d. samples, column of each array represent variables|
+|label_true |  the ground truth of cluster label of each group|
+|k |  the length of explicit kernel mapping|
+|score_flg | output score file or not. 1 - yes, 0 - no|
+
+Output:
+
+| Argument  | Description  |
+|---|---|
+|label   |    list of cluster label for each group|
 
 ### Synthetic experiment (test_KEBC.py)
 
