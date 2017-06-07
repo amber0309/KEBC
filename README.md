@@ -1,6 +1,7 @@
 # KEBC (Kernel Embedding-based Clustering)
 
 Python Code for the KEBC algorithm
+
 (Anaconda 4.3.0 64-bit for python 2.7 on Windows).
 
 Content:
@@ -13,6 +14,7 @@ Content:
 -------------------------------------------------------------------------------
 ----------------------------------- 1. Code -----------------------------------
 -------------------------------------------------------------------------------
+
 
 **KEBC.py**  - Implementation of KEBC using kernel trick
 
