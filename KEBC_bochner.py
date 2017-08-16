@@ -23,7 +23,7 @@ OUTPUT:
 from __future__ import division
 import numpy as np
 from scipy.linalg import inv, eig
-from scipy.sparse.linalg import eigs
+from scipy.sparse.linalg import eigs, eigsh
 from scipy.optimize import linear_sum_assignment
 from scipy.stats import gamma
 from random import choice
