@@ -2,14 +2,12 @@
 
 Python code for the KEBC algorithm (Anaconda 4.3.0 64-bit for python 2.7 on Windows).
 
-Content:
 1. Code
 2. Usage
 3. Contact
 
 
 ## 1. Code 
------
 
 ### KEBC.py
 (Implementation of KEBC using kernel trick)
@@ -38,7 +36,6 @@ Content:
 |exp_synth | conduct synthetic experiment|
 
 ## 2. Usage
------
 
 ### KEBC (KEBC.py)
 
@@ -99,6 +96,5 @@ Inputs:
 
 
 ## 3. Contact
------
 <shoubo.hu@gmail.com>
 <chenzhitang2@huawei.com>
