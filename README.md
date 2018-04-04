@@ -1,24 +1,18 @@
 # KEBC (Kernel Embedding-based Clustering)
 
-Python Code for the KEBC algorithm
-
-
-(Anaconda 4.3.0 64-bit for python 2.7 on Windows).
+Python code for the KEBC algorithm (Anaconda 4.3.0 64-bit for python 2.7 on Windows).
 
 Content:
-
 1. Code
 2. Usage
 3. Contact
 
 
--------------------------------------------------------------------------------
------------------------------------ 1. Code -----------------------------------
--------------------------------------------------------------------------------
+## 1. Code 
+-----
 
-
-
-**KEBC.py**  - Implementation of KEBC using kernel trick
+### KEBC.py
+(Implementation of KEBC using kernel trick)
 
 | Function  | Description  |
 |---|---|
@@ -26,14 +20,16 @@ Content:
 |KEBC_cond_ref |  KEBC using conditional distributions with reference distribution|
 |KEBC_marg | KEBC using marginal distributions|
 
-**KEBC_bochner.py**  - Implementation of KEBC using explicit kernel mapping (Bochner's theorem)
+### KEBC_bochner.py
+(Implementation of KEBC using explicit kernel mapping (Bochner's theorem))
 
 | Function  | Description  |
 |---|---|
 |KEBC_cond_bochner | KEBC using conditional distributions|
 |KEBC_marg_bochner | KEBC using marginal distributions|
 
-**test_KEBC.py**  - a toy synthetic test
+### test_KEBC.py
+(a toy synthetic test)
 
 | Function  | Description  |
 |---|---|
@@ -41,9 +37,8 @@ Content:
 |Generate_XY  |  generate synthetic data|
 |exp_synth | conduct synthetic experiment|
 
--------------------------------------------------------------------------------
----------------------------------- 2. Usage -----------------------------------
--------------------------------------------------------------------------------
+## 2. Usage
+-----
 
 ### KEBC (KEBC.py)
 
@@ -103,10 +98,7 @@ Inputs:
 |n_grp |    number of groups|
 
 
--------------------------------------------------------------------------------
---------------------------------- 3. Contact ----------------------------------
--------------------------------------------------------------------------------
-
-E-Mail: 
-shoubo.hu@gmail.com
-chenzhitang2@huawei.com
+## 3. Contact
+-----
+<shoubo.hu@gmail.com>
+<chenzhitang2@huawei.com>
