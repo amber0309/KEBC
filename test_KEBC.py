@@ -20,7 +20,7 @@ from scipy.linalg import inv, eig
 from scipy.optimize import linear_sum_assignment
 from scipy.stats import gamma
 from random import choice
-from KEBC import KEBC_cond, KEBC_marg, membership, KEBC_cond_ref
+from KEBC_bochner import KEBC_cond_bochner, membership
 
 from sklearn.cluster import KMeans
 
@@ -114,9 +114,7 @@ def exp_synth(n_clu, n_grp):
 
 		XY.append(xy)
 
-	# label = KEBC_cond([i.copy() for i in XY], label_true, 0)
-	# label = KEBC_cond_ref([i.copy() for i in XY], label_true, 0)
-	label = KEBC_marg([i.copy() for i in XY], label_true, 0)
+	label = KEBC_cond_bochner([i.copy() for i in XY], label_true, 100, 1)
 
 	result = gen_stat(label_true, label, n_clu)
 
@@ -127,4 +125,4 @@ def exp_synth(n_clu, n_grp):
 
 
 if __name__ == '__main__':
-	exp_synth(2,30)
+	exp_synth(2,50)
