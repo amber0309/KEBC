@@ -53,7 +53,7 @@ Output:Output of function **KEBC_cond_bochner**
 
 If the fisrt column is $X$ and the second is $Y$, the conditional distribution KEBC estimates for each group is $p(X|Y)$.
 
-### Other clustering choices
+### Other function choices for clustering
 
 #### KEBC.py
 (Implementation of KEBC using kernel trick)
