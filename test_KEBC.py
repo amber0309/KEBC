@@ -57,7 +57,7 @@ def gen_stat(lbl_true, lbl_ord, n_clu):
 
 
 def Generate_XY(label, sample_size):
-	ncoeff = 1
+	ncoeff = 0.1
 	
 	Px = 20 * np.random.rand() - 10
 	Py = 20 * np.random.rand() - 10
@@ -73,17 +73,19 @@ def Generate_XY(label, sample_size):
 	x3 = 0.3 * np.random.randn(L3, 1)
 
 	x = np.concatenate((x1, x2, x3), axis = 0)
-	c = 0.4 * np.random.rand(1) + 0.8
+	c = 0.4 * np.random.rand(1) + 0.4
 
 	if label == 0:
 		n = np.random.randn(sample_size, 1)
 		y = np.exp(c * x) + n * ncoeff
 	elif label == 1:
-		n = np.random.rand(sample_size ,1)
-		y = np.sign(c * x) * ((c * x)**2) + n * ncoeff
-	elif label == 2:
 		n = - np.random.rand(sample_size, 1)
 		y = np.cos(c * x * n) + n * ncoeff
+	elif label == 2:
+		n = - np.random.rand(sample_size, 1)
+		y = np.cos(c * x * n) * n * ncoeff
+		n = np.random.rand(sample_size ,1)
+		y = np.sign(c * x) * ((c * x)**2) + n * ncoeff
 
 	else:
 		pass
@@ -102,19 +104,19 @@ def exp_synth(n_clu, n_grp):
 
 	for init in range(0, n_clu):
 		label_true.append(init)
-		sample_size = choice(np.arange(200,300))
+		sample_size = choice(np.arange(40,50))
 		xy = Generate_XY(init, sample_size)
 		XY.append(xy)
 
 	for i in range(0, N):
 		label = choice(np.arange(0, n_clu))
 		label_true.append(label)
-		sample_size = choice(np.arange(200, 300))
+		sample_size = choice(np.arange(40, 50))
 		xy = Generate_XY(label, sample_size)
 
 		XY.append(xy)
 
-	label = KEBC_cond_bochner([i.copy() for i in XY], label_true, 100, 1)
+	label = KEBC_cond_bochner([i.copy() for i in XY], label_true, 100, 0)
 
 	result = gen_stat(label_true, label, n_clu)
 
