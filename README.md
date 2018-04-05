@@ -7,6 +7,9 @@ Python code of distribution clustering algorithm using kernel embedding (KEBC).
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
+- NumPy
+- SciPy
+- scikit-learn
 
 We test the code using **Anaconda 4.3.0 64-bit for python 2.7** on windows. Any later version should still work perfectly.
 
