@@ -15,7 +15,7 @@ We test the code using **Anaconda 4.3.0 64-bit for python 2.7** on windows. Any 
 After installing allrequired packages, you can run *test_KEBC.py* to see whether ENCI could work normally.
 
 The test does the following:
-1. it generate 30 groups of data coming from 2 generative mechanisms and put all those groups in a list.
+1. it generate 50 groups of data coming from 2 generative mechanisms and put all those groups in a list.
 (Each group is a L by 2 *numpy array* where L is the number of points in the current group.)
 2. KEBC is applied on the generated data set to form clusters.
 
