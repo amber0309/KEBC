@@ -37,8 +37,6 @@ Apply KEBC on your data
 label = KEBC_cond_bochner(XY, label_true, k, score_flg)
 ```
 
-### Notes
-
 Input of function **KEBC_cond_bochner()**
 
 | Argument  | Description  |
@@ -54,7 +52,7 @@ Output of function **KEBC_cond_bochner()**
 |---|---|
 |label   |    list of cluster label for each group|
 
-If the fisrt column is $X$ and the second is $Y$, the conditional distribution KEBC estimates for each group is $p(X|Y)$.
+**NOTE**: If the fisrt column is $X$ and the second is $Y$, the conditional distribution KEBC estimates for each group is $p(X|Y)$.
 
 ### Other function choices for clustering
 
