@@ -37,6 +37,8 @@ Apply KEBC on your data
 label = KEBC_cond_bochner(XY, label_true, k, score_flg)
 ```
 
+### Description
+
 Input of function **KEBC_cond_bochner()**
 
 | Argument  | Description  |
