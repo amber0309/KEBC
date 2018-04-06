@@ -39,7 +39,7 @@ label = KEBC_cond_bochner(XY, label_true, k, score_flg)
 
 ### Notes
 
-Input of function **KEBC_cond_bochner**
+Input of function **KEBC_cond_bochner()**
 
 | Argument  | Description  |
 |---|---|
@@ -48,7 +48,7 @@ Input of function **KEBC_cond_bochner**
 |k |  the length of explicit kernel mapping|
 |score_flg | output score file or not. 1 - yes, 0 - no|
 
-Output:Output of function **KEBC_cond_bochner**
+Output of function **KEBC_cond_bochner()**
 
 | Argument  | Description  |
 |---|---|
@@ -63,16 +63,16 @@ If the fisrt column is $X$ and the second is $Y$, the conditional distribution K
 
 | Function  | Description  |
 |---|---|
-|KEBC_cond | KEBC using conditional distributions|
-|KEBC_marg | KEBC using marginal distributions|
+|KEBC_cond() | KEBC using conditional distributions|
+|KEBC_marg() | KEBC using marginal distributions|
 
 #### KEBC_bochner.py
 (Implementation of KEBC using explicit kernel mapping (Bochner's theorem))
 
 | Function  | Description  |
 |---|---|
-|KEBC_cond_bochner | KEBC using conditional distributions|
-|KEBC_marg_bochner | KEBC using marginal distributions|
+|KEBC_cond_bochner() | KEBC using conditional distributions|
+|KEBC_marg_bochner() | KEBC using marginal distributions|
 
 ## Authors
 
