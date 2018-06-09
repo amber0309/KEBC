@@ -2,6 +2,8 @@
 
 Python code of distribution clustering algorithm using kernel embedding (KEBC).
 
+A brief description of KEBC algorithm is available at [https://amber0309.github.io/2017/06/07/kebc/](https://amber0309.github.io/2017/06/07/kebc/).
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
