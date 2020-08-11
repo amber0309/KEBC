@@ -1,6 +1,10 @@
 # Kernel Embedding-Based Clustering (KEBC)
 
-Python code of distribution clustering algorithm using kernel embedding (KEBC).
+Python implementation of the following paper
+
+[Model-free Inference of Diffusion Networks using RKHS Embeddings.](https://link.springer.com/article/10.1007/s10618-018-00611-1)  
+Shoubo Hu, Bogdan Cautis, Zhitang Chen, Laiwan Chan, Yanhui Geng, Xiuqiang He.  
+*Data Mining and Knowledge Discovery* 33, no. 2 (2019): 499-525.
 
 A brief description of KEBC algorithm is available at [https://amber0309.github.io/2017/06/07/kebc/](https://amber0309.github.io/2017/06/07/kebc/).
 
